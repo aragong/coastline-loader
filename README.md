@@ -19,11 +19,7 @@
 ---
 
 ## :heavy_check_mark: Tests: 
-<<<<<<< HEAD
-- [tests/test_gshhs.py](tests/test_io.py)
-=======
-- [tests/test_io.py](tests/test_io.py)
->>>>>>> a935542be1a31a12e638106bee34f5d4e6fca3f0
+- [tests/test_gshhs.py](tests/test_gshhs.py)
 
 ---
 
