@@ -12,7 +12,7 @@ df.head()
 # Plot from DataFrame
 fig, ax = plt.subplots()
 for i in df["polygon_id"].unique():
-    df[df["polygon_id"]==i].plot(x="longitude", y="latitude", ax=ax, legend=False)
+    df[df["polygon_id"] == i].plot(x="longitude", y="latitude", ax=ax, legend=False)
 plt.show()
 
 # Plot from GeoDataFrame
