@@ -26,6 +26,8 @@ dependencies:
   - python-dotenv
   - pytest-cov
   - pip
+  - pip-tools
+  - flit
   - pre-commit
   - coverage-badge
   - geopandas

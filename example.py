@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from gshhs import GetCoastline
+from coastline_loader.gshhs import GetCoastline
 
 # Load to GeoDataFrame from GSHHS database in Esri-shape format
 coast = GetCoastline(resolution="f", lonlatbox=(-10, 15, 32.5, 52.5))
