@@ -11,7 +11,7 @@ SHP_DATABASE_DIR = os.environ.get("GSHHG_SHP_DATABASE_PATH")
 class GetCoastline:
     def __init__(
         self,
-        resolution: str = "c",
+        resolution: str = "f",
         lonlatbox: tuple = None,
         output_epsg: int = None,
         layer: str = "L1",
@@ -56,7 +56,7 @@ class GetCoastline:
                     (lonlatbox[0], lonlatbox[2]),
                 ]
             )
-
+        print(SHP_DATABASE_DIR)
         path = os.path.join(
             SHP_DATABASE_DIR,
             "GSHHS_shp",

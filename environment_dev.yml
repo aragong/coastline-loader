@@ -1,0 +1,33 @@
+name: costline_loader_dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - dask
+  - black
+  - bottleneck
+  - rope
+  - ipykernel
+  - geojson
+  - bs4
+  - hypothesis
+  - pre-commit
+  - requests
+  - numexpr
+  - scipy
+  - pytest
+  - pylint
+  - python=3.9
+  - netcdf4
+  - matplotlib
+  - xarray
+  - lxml
+  - python-dotenv
+  - pytest-cov
+  - pip
+  - pip-tools
+  - flit
+  - pre-commit
+  - coverage-badge
+  - geopandas
