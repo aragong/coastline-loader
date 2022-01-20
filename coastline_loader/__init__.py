@@ -1,3 +1,5 @@
+"""Load GSHHS coastline from shape-file database
+"""
 # import os
 # from dotenv import load_dotenv
 
