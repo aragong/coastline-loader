@@ -14,8 +14,11 @@
 
 3. Extract content of the compressed file downloaded.
 
-4. Set path to "gshhg-gmt-2.3.7" folder in `.env` file.
-
+4. Set path to folder "gshhg-gmt-2.3.7" folder in `.env` file.
+```bash
+# Add variable GSHHG_SHP_DATABASE_PATH to ".env" file using terminal or directly modify file ".env"
+dotenv set GSHHG_SHP_DATABASE_PATH  /your/path/
+```
 ---
 
 ## :heavy_check_mark: Tests: 
