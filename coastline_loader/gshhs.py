@@ -83,6 +83,7 @@ class GetCoastline:
             pd.DataFrame: costlines polygons
         """
         df = pd.DataFrame([])
+        dataframes = []
         for index, (feature, area) in enumerate(zip(self.gdf.geometry, self.gdf.area)):
             lon, lat = feature.exterior.coords.xy
             poly_id = [index] * len(feature.exterior.coords)
@@ -90,6 +91,6 @@ class GetCoastline:
             tmp = pd.DataFrame(
                 {"polygon_id": poly_id, "longitude": lon, "latitude": lat, "area": area}
             )
-            df = df.append(tmp)
-
+            dataframes.append(tmp)
+        df = pd.concat(dataframes, ignore_index=True)
         return df.reset_index(drop=True)
